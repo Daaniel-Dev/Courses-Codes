@@ -1,2 +1,2 @@
-# My-Codes
-Alguns códigos que eu fiz desde que eu comecei a programar.
+# Seja bem-vindo!
+Criei um repositório para alguns códigos que eu fiz desde que eu comecei a programar.
