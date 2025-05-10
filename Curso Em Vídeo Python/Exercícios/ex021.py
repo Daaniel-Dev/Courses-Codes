@@ -1,3 +1,4 @@
-from vlc import MediaPlayer
-audio = MediaPlayer("C:/Users/Daniel/PycharmProjects/CursoEmVídeo/Exercícios/chicken_jockey.mp3")
-audio.play()
+from pygame import mixer
+mixer.init()
+mixer.music.load('chicken_jockey.mp3')
+mixer.music.play()
