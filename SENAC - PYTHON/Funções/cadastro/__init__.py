@@ -1,7 +1,7 @@
 def checar_nome():
     while True:
         nome = str(input('Nome: ')).strip().title()
-        if nome.isnumeric() or nome.isspace() or len(nome) == 0:
+        if nome.isnumeric() or nome.isspace() or not nome:
             print('\033[31;1mValor inválido. Digite novamente.\033[m')
             continue
         print('\033[32;1mValor cadastrado com sucesso!\033[m')
