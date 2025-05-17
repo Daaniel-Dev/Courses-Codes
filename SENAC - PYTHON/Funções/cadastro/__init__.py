@@ -3,9 +3,9 @@ def checar_nome():
         nome = str(input('Nome: ')).strip().title()
         if nome.isnumeric() or nome.isspace() or len(nome) == 0:
             print('\033[31;1mValor inválido. Digite novamente.\033[m')
-        else:
-            print('\033[32;1mValor cadastrado com sucesso!\033[m')
-            return nome
+            continue
+        print('\033[32;1mValor cadastrado com sucesso!\033[m')
+        return nome
 
 
 def checar_nota():
@@ -45,8 +45,8 @@ def confirm():
         confirmação = str(input('Deseja continuar? [S/N] ')).strip().upper()[0]
         if confirmação not in ('S', 'N'):
             print('\033[31;1mValor inválido. Digite S ou N.\033[m')
-        else:
-            return confirmação
+            continue
+        return confirmação
 
 
 def nota_formatada(nota):
