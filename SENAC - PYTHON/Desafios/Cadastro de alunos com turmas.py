@@ -23,12 +23,14 @@ while True:
                 tamanho_sala = len(salas[nome_sala])
                 titulo(f'ALUNOS DA TURMA {nome_sala.upper()}', '-', 40, True)
                 if tamanho_sala > 0:
+                    print(f'{'NOME':<35} {'NOTA':<10}')
+                    print()
                     for ordem, estudante in enumerate(estudantes):
                         if ordem == 0 and not maior_nota:
                             maior_nota = estudante
                         elif estudante['nota'] > maior_nota['nota']:
                             maior_nota = estudante
-                        print(f'- {estudante['nome']}: ({nota_formatada(estudante['nota'])})')
+                        print(f'{estudante['nome']:<35} {nota_formatada(estudante['nota']):<10}')
                         soma = soma + estudante['nota']
                     média = soma / tamanho_sala
                     titulo(f'MÉDIA DA TURMA {nome_sala.upper()}: {nota_formatada(média)}', '-', 40)
