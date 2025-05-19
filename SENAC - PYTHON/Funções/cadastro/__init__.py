@@ -24,17 +24,18 @@ def checar_nota():
 
 def pergunta_multiplas_escolhas(*escolhas, nome):
     lista = []
+    escolhas = tuple(escolhas)
     while True:
-        for indice, nome in enumerate(escolhas):
+        for indice, escolha in enumerate(escolhas):
             lista.append(indice)
-            print(f'[{indice}] {nome.upper()}', end=' | ' if nome != escolhas[-1] else '\n')
+            print(f'[{indice + 1}] {escolha.upper()}', end='\n')
         try:
-            pergunta = int(input(f'Você é de qual {nome}?\n'))
+            pergunta = int(input(f'Você é de qual {nome}?\n')) - 1
         except ValueError:
             print('\033[31;1mValor inválido. Tente novamente.\033[m')
             continue
         if pergunta not in lista:
-            print(f'\033[31;1mValor inválido. Digite um número entre 0 e {len(escolhas)}.\033[m')
+            print(f'\033[31;1mValor inválido. Digite um número entre 1 e {len(escolhas)}.\033[m')
             continue
         print('\033[32;1mValor cadastrado com sucesso!\033[m')
         return pergunta
