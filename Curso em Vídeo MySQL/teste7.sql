@@ -54,3 +54,28 @@ order by nome;
 select * from cursos
 where carga > 35 and totaulas < 30
 order by nome;
+
+
+# Usando o operador LIKE para nomes que começam com a letra 'P'
+select * from cursos
+where nome like 'P%';
+
+
+# Usando o operador LIKE para nomes que terminam com a letra 'A'
+select * from cursos
+where nome like '%A';
+
+
+# Usando o operador LIKE para nomes que contenham ao menos uma letra 'A'
+select * from cursos
+where nome like '%A%';
+
+
+# Usando o operador LIKE para nomes que contenham nenhuma letra 'A'
+select * from cursos
+where nome not like '%A%';
+
+
+# Usando o operador LIKE para nomes que começam com 'PH' e e terminam com a letra 'P'
+select * from cursos
+where nome like 'PH%P';
