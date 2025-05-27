@@ -56,26 +56,52 @@ where carga > 35 and totaulas < 30
 order by nome;
 
 
-# Usando o operador LIKE para nomes que começam com a letra 'P'
+# Usando o operador LIKE com a wildcard % para nomes que começam com a letra 'P'
 select * from cursos
 where nome like 'P%';
 
 
-# Usando o operador LIKE para nomes que terminam com a letra 'A'
+# Usando o operador LIKE com a wildcard % para nomes que terminam com a letra 'A'
 select * from cursos
 where nome like '%A';
 
 
-# Usando o operador LIKE para nomes que contenham ao menos uma letra 'A'
+# Usando o operador LIKE com a wildcard % para nomes que contenham ao menos uma letra 'A'
 select * from cursos
 where nome like '%A%';
 
 
-# Usando o operador LIKE para nomes que contenham nenhuma letra 'A'
+# Usando o operador LIKE com a wildcard % para nomes que contenham nenhuma letra 'A'
 select * from cursos
 where nome not like '%A%';
 
 
-# Usando o operador LIKE para nomes que começam com 'PH' e e terminam com a letra 'P'
+# Usando o operador LIKE com a wildcard % para nomes que começam com 'PH' e terminam com a letra 'P'
 select * from cursos
 where nome like 'PH%P';
+
+
+# Usando o operador LIKE com a wildcard _ e % para nomes que começam com 'PH', terminam com a letra 'P' e contenham algum caractere no final
+select * from cursos
+where nome like 'PH%P_';
+
+
+# Distinguindo registros repetidos
+select distinct nacionalidade from gafanhotos;
+
+
+# Agregação com função count()
+select count(*) from cursos where carga > 30;
+
+
+# Agregação com função max() e min()
+select nome, max(totaulas) from cursos where ano = '2016';
+select nome, min(totaulas) from cursos where ano = '2016';
+
+
+# Agregação com função sum()
+select sum(totaulas) from cursos;
+
+
+# Agregação com função avg()
+select avg(totaulas) from cursos;
