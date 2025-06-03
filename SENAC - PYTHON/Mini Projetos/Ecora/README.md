@@ -1,50 +1,59 @@
-# Ecora - Sua Plataforma de Produtos Sustentáveis
+# Ecora
 
 ## Descrição
-
-**Ecora** é uma aplicação simples e eficiente desenvolvida em **Python**, com o objetivo de ser um **marketplace de produtos sustentáveis**. A proposta é criar um ambiente onde grandes e pequenos vendedores possam divulgar seus produtos, promovendo práticas conscientes e ecológicas.
-
-Os usuários podem se cadastrar como:
-
-- **Clientes**: exploram os produtos e realizam compras.
-- **Vendedores**: cadastram produtos, com opção de adicionar vídeos sobre o uso ou propósito do item.
-
-Além disso, a plataforma oferece espaço para:
-
-- Depoimentos de usuários
-- Vídeos educacionais sobre sustentabilidade
+**Ecora** é uma plataforma desenvolvida com o objetivo de promover a compra e venda de **produtos sustentáveis**. Este projeto oferece uma experiência simples e divertida, permitindo que clientes e vendedores interajam em um marketplace dedicado à sustentabilidade. A plataforma incentiva tanto grandes quanto pequenos vendedores a divulgarem seus produtos, além de oferecer uma seção educativa que auxilia os usuários no descarte ou reutilização de materiais de forma consciente.
 
 ---
 
-## Funcionalidades
+## Funcionalidades 
 
-- Cadastro de clientes e vendedores
-- Cadastro de produtos com nome, preço, descrição e vídeo opcional
-- Exibição e compra de produtos
-- Compartilhamento de depoimentos dos usuários
-- Gerenciamento de vídeos educacionais
-- Seção "Sobre Nós", com informações do aplicativo
+1. **Login** *(em breve)*  
+   Uma funcionalidade em desenvolvimento que permitirá aos usuários acessarem suas contas pessoais.
+
+2. **Cadastro (Cliente e Vendedor)**  
+   Os usuários podem se cadastrar no sistema como:
+   - **Cliente**: Para adquirir produtos.
+   - **Vendedor**: Para divulgar seus produtos de forma prática.  
+
+3. **Gerenciamento de Produtos** *(para vendedores)*  
+   - Cadastrar novos produtos.
+   - Listar e visualizar produtos já cadastrados.
+
+4. **Compra de Produtos**  
+   Os clientes podem visualizar os produtos disponíveis, consultar os detalhes e realizar a compra de forma prática.
+
+5. **Sobre Nós**  
+   Saiba mais sobre a missão da **Ecora** e como oferecemos suporte para nossa comunidade.
+
+6. **Depoimentos**  
+   - Adicione depoimentos sobre sua experiência na plataforma.  
+   - Leia comentários de outros usuários.  
+
+7. **Vídeos Educacionais**  
+   - Adicione links de vídeos educativos sobre sustentabilidade.  
+   - Consulte vídeos já cadastrados para aprender mais sobre boas práticas.  
 
 ---
 
-## Objetivo
+## Como Funciona?
 
-Nosso objetivo é ser um marketplace acessível, promovendo visibilidade para todos os tipos de vendedores, incentivando a economia circular e a educação ambiental. Buscamos conscientizar os usuários sobre o destino correto de produtos sem utilidade e como reutilizá-los de forma criativa e consciente.
+- ### Clientes
+  - Faça o cadastro.
+  - Navegue pelos produtos disponíveis.
+  - Escolha o produto desejado e finalize a compra facilmente.  
 
----
-
-## Estrutura do Projeto
-
-- `main.py`: gerencia o fluxo principal do programa (menus, navegação e controle)
-- `functions.py`: contém funções auxiliares (cadastro, exibição e manipulação de dados)
-- `classes.py`: define as classes principais:
-  - `User`: classe base para usuários
-  - `Cliente`: herda de `User`
-  - `Vendedor`: herda de `User`, com permissão para cadastrar produtos
-  - `Produto`: representa os itens à venda
+- ### Vendedores
+  - Cadastre-se como vendedor.
+  - Adicione seus produtos (incluindo vídeos de demonstração, caso aplicável).
+  - Gerencie seus itens e aguarde novos pedidos.
 
 ---
 
-## Sobre Nós
-O Ecora foi desenvolvido com o propósito de conectar pessoas, ideias e atitudes sustentáveis, usando a tecnologia como ponte para um futuro mais consciente.
+## Estrutura do Projeto 
 
+- **`main.py`**: Arquivo principal que executa o programa.  
+- **`functions.py`**: Contém funções de apoio usadas ao longo do sistema, como menus, cadastro de produtos e funcionalidades secundárias (depoimentos, vídeos educacionais, etc.).  
+- **`classes.py`**: Contém as definições de classes (Usuários, Vendedores e Produtos) usadas para organizar os dados.  
+- **`dados.txt`**: Armazena informações de usuários registrados.
+
+---
