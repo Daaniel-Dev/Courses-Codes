@@ -1,23 +1,50 @@
-### README: Ecora - Sua Plataforma de Produtos Sustentáveis
-#### **Descrição**
-Ecora é uma aplicação simples e eficiente desenvolvida em Python que tem como objetivo ser um marketplace para produtos sustentáveis. Nossa proposta é criar um ambiente no qual grandes e pequenos vendedores possam divulgar seus produtos, promovendo práticas conscientes e sustentáveis.
-No Ecora, os usuários têm a opção de se cadastrar como **clientes** ou **vendedores**, permitindo que:
-- **Clientes** explorem os produtos cadastrados e realizem compras diretamente.
-- **Vendedores** cadastrem produtos, incluindo vídeos que destacam seu uso ou propósito.
+# Ecora - Sua Plataforma de Produtos Sustentáveis
 
-Além disso, a plataforma oferece espaço para o compartilhamento de **depoimentos** e **vídeos educacionais**, incentivando uma comunidade engajada com a sustentabilidade.
-#### **Funcionalidades**
-- Cadastro de **clientes** e **vendedores**.
-- **Cadastro de produtos** por vendedores, com informações como nome, preço, descrição e vídeo opcional.
-- **Exibição e compra de produtos** cadastrados.
-- Área para o compartilhamento de **depoimentos** de usuários.
-- **Gerenciamento de links de vídeos educacionais**, promovendo a educação sobre práticas sustentáveis.
-- Exibição de uma seção "Sobre Nós", com informações do aplicativo.
+## Descrição
 
-#### **Objetivo**
-Nosso objetivo é ser um marketplace que oferece visibilidade tanto para grandes quanto para pequenos vendedores, promovendo o reconhecimento de seus talentos e incentivando práticas sustentáveis. Também buscamos educar os usuários sobre o destino correto de itens que não possuem utilidade e como eles podem ser reaproveitados.
+**Ecora** é uma aplicação simples e eficiente desenvolvida em **Python**, com o objetivo de ser um **marketplace de produtos sustentáveis**. A proposta é criar um ambiente onde grandes e pequenos vendedores possam divulgar seus produtos, promovendo práticas conscientes e ecológicas.
 
-#### **Estrutura do Projeto**
-- **`main.py`**: Controla o fluxo principal do programa, exibindo o menu e gerenciando as interações do usuário.
-- **`functions.py`**: Contém todas as funções auxiliares para cadastro, exibição e processamento de dados do aplicativo.
-- **`classes.py`**: Define as classes principais (`User`, , e ), usadas para modelar os dados. `Vendedor``Produto`
+Os usuários podem se cadastrar como:
+
+- **Clientes**: exploram os produtos e realizam compras.
+- **Vendedores**: cadastram produtos, com opção de adicionar vídeos sobre o uso ou propósito do item.
+
+Além disso, a plataforma oferece espaço para:
+
+- Depoimentos de usuários
+- Vídeos educacionais sobre sustentabilidade
+
+---
+
+## Funcionalidades
+
+- Cadastro de clientes e vendedores
+- Cadastro de produtos com nome, preço, descrição e vídeo opcional
+- Exibição e compra de produtos
+- Compartilhamento de depoimentos dos usuários
+- Gerenciamento de vídeos educacionais
+- Seção "Sobre Nós", com informações do aplicativo
+
+---
+
+## Objetivo
+
+Nosso objetivo é ser um marketplace acessível, promovendo visibilidade para todos os tipos de vendedores, incentivando a economia circular e a educação ambiental. Buscamos conscientizar os usuários sobre o destino correto de produtos sem utilidade e como reutilizá-los de forma criativa e consciente.
+
+---
+
+## Estrutura do Projeto
+
+- `main.py`: gerencia o fluxo principal do programa (menus, navegação e controle)
+- `functions.py`: contém funções auxiliares (cadastro, exibição e manipulação de dados)
+- `classes.py`: define as classes principais:
+  - `User`: classe base para usuários
+  - `Cliente`: herda de `User`
+  - `Vendedor`: herda de `User`, com permissão para cadastrar produtos
+  - `Produto`: representa os itens à venda
+
+---
+
+## Sobre Nós
+O Ecora foi desenvolvido com o propósito de conectar pessoas, ideias e atitudes sustentáveis, usando a tecnologia como ponte para um futuro mais consciente.
+
